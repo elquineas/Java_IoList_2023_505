@@ -1,0 +1,14 @@
+-- ioList 관리자 화면
+
+CREATE TABLESPACE iolist
+DATAFILE 'C:/app/data/iolist.dbf'
+SIZE 1M AUTOEXTEND ON NEXT 1K;
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = true;
+
+CREATE USER C##shoping IDENTIFIED BY 12341234
+DEFAULT TABESPACE iolist; 
+
+GRANT DBA shoping;
+
+
